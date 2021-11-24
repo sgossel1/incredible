@@ -216,6 +216,101 @@
             .cls-59 {
                 fill: #f6a61e;
             }
+
+
+            .svg-component{
+                background: black;
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+              }
+              
+              .svg-component #svg-container {
+                background: #6CCAEF;
+                width: 100%;
+              }
+              
+              #clickable > g > g > g:last-child > g{
+                -webkit-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
+                cursor:pointer;
+                transform-box: fill-box;
+                -webkit-transform-origin: center;
+                    -ms-transform-origin: center;
+                        transform-origin: center;
+              }
+              
+              #clickable > g > g > g:last-child:hover > g{
+                  -webkit-transform: scale(1.1,1.1);
+                      -ms-transform: scale(1.1,1.1);
+                          transform: scale(1.1,1.1);
+              }
+              
+              #clickable #flux-kanban,
+              #clickable #flux-scrum{
+                -webkit-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
+                cursor:pointer;
+                transform-box: fill-box;
+                -webkit-transform-origin: center;
+                    -ms-transform-origin: center;
+                        transform-origin: center;
+              }
+              
+              #clickable #flux-kanban:hover,
+              #clickable #flux-scrum:hover{
+                  -webkit-transform: scale(1.1,1.1);
+                      -ms-transform: scale(1.1,1.1);
+                          transform: scale(1.1,1.1);
+              }
+              
+              #clickable g g{
+                -webkit-transition: 0.2s;
+                -o-transition: 0.2s;
+                transition: 0.2s;
+              }
+              
+              #clickable g g.active {
+                opacity: 1;
+              }
+              
+              #clickable g g.unactive{
+                opacity: 0.5;
+              }
+              
+              #clickable #under-construction {
+                opacity: 1;
+              }
+              
+              #illustration{
+                -webkit-transition: all 0.6s;
+                -o-transition: all 0.6s;
+                transition: all 0.6s;
+              }
+              
+              #illustration.transparent{
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                transition: all 0.4s;
+                opacity: 0.5;
+              }
+              
+              #construction {
+                opacity:0;
+                -webkit-transition: all 0.6s;
+                -o-transition: all 0.6s;
+                transition: all 0.6s;
+                transform: translate(-150px, 0px);
+              }
+              
+              #construction.active {
+                opacity: 1;
+                transform: translate(0px, 0px);
+              }
+              
         </style>
         
   
