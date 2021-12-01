@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
 }
-body {
-    background: rgb(123, 158, 158);
-}
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +42,7 @@ body {
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
 }
 .hexLink {
+  background-color: orange;
     display:block;
     width: 100%;
     height: 100%;
@@ -68,16 +66,24 @@ body {
           transform: rotate3d(0,0,0,0deg);
 }
 
-.hex h1, .hex p {
+.hex h1 {
+  bottom: 50%;
+  padding-top:50%;
+  font-size: 1.5em;
+  z-index: 1;
+  width: 100%;
+}
+
+.hex h2, .hex p {
   width: 100%;
   padding: 5%;
   box-sizing:border-box;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgba(0, 68, 102, 1);
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
 }
-.hex h1 {
+.hex h2 {
   bottom: 50%;
   padding-top:50%;
   font-size: 1.5em;
@@ -86,7 +92,7 @@ body {
       -ms-transform:translate3d(0,-100%,0);
           transform:translate3d(0,-100%,0);
 }
-.hex h1::after {
+.hex h2::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -105,7 +111,7 @@ body {
 
 
 /*** HOVER EFFECT  **********************************************************************/
-.hexLink:hover h1, .hexLink:focus h1,
+.hexLink:hover h2, .hexLink:focus h2,
 .hexLink:hover p, .hexLink:focus p{
   -webkit-transform:translate3d(0,0,0);
       -ms-transform:translate3d(0,0,0);
@@ -130,10 +136,10 @@ body {
     padding-bottom: 5.5%
   }
   .hex {
-    width: 25%; /* = 100 / 4 */
+    width: 20%; /* = 100 / 4 */
   }
-  .hex:nth-child(7n+5){ /* first hexagon of even rows */
-    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -172,126 +178,126 @@ body {
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Pilotage et accompagnement</h1>
+        <h2>Squad Synchro</h2>
+        <p>8 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Tests de non-régression</h1>
+        <h2>Squad TRA</h2>
+        <p>3 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Relation client, veille</h1>
+        <h2>Squad Offre</h2>
+        <p>3 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1><br>Suivi des comptes de gestion des crédits</h1>
+        <h2>Squad BO</h2>
+        <p>4 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Animation, amélioration continue</h1>
+        <h2>Squad ACDC</h2>
+        <p>5 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Architecture, génie logiciel et sécurité</h1>
+        <h2>Squad Tech</h2>
+        <p>2 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Gestion des crédits amortissables</h1>
+        <h2>Squad GScream</h2>
+        <p>19 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Instruction des crédits amortissables aux particuliers</h1>
+        <h2>Squad INCA</h2>
+        <p>14 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm7.staticflickr.com/6139/5986939269_10721b8017.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Crédits à court termes et revolving</h1>
+        <h2>Squad ACE</h2>
+        <p>13 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Instruction des crédits amortissables aux particuliers</h1>
+        <h2>Squad VIC</h2>
+        <p>15 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm8.staticflickr.com/7163/6822904141_50277565c3.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Crédits professionnels Sofia & Basafi</h1>
+        <h2>Squad Oasis</h2>
+        <p>12 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm4.staticflickr.com/3771/13199704015_72aa535bd7.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Garantie des crédits, crédits spécialisés et contre-garanties</h1>
+        <h2>Squad Galion</h2>
+        <p>9 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Gestion des financements spécialisés pour les professionnels</h1>
+        <h2>Squad LISA</h2>
+        <p>7 Collaborateurs</p>
       </a>
     </div>
   </li>
   <li class="hex">
     <div class="hexIn">
       <a class="hexLink" href="#">
-        <img src="https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg" alt="" />
-        <h1>This is a title</h1>
-        <p>Some sample text about the article this hexagon leads to</p>
+        <h1>Crédit bail LLD & LOA</h1>
+        <h2>Squad CLIMAT</h2>
+        <p>21 Collaborateurs</p>
       </a>
     </div>
   </li>
